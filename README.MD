@@ -1,27 +1,29 @@
-# HEIC to PNG Converter
+# HEIC to PNG Batch Converter
 
-A GUI tool to batch convert HEIC image files to PNG format with option to delete original files after conversion.
+A Windows GUI application to batch convert HEIC images to PNG format.
 
 ## Features
-- Browse folders containing HEIC files
-- Convert multiple HEIC files to PNG
-- Option to delete original HEIC files after conversion
-- Progress tracking
+- Simple GUI interface
+- Batch conversion of multiple HEIC files
+- Option to delete original files after conversion
+- Progress tracking with status updates
 - Detailed conversion log
 
-## Requirements
-- Python 3.x
-- Pillow
-- pillow-heif
-- pywin32
+## Download
+Download the executable from the [releases](https://github.com/DjSinestro1/BatchConvert_heic_png/releases) section.
 
 ## Usage
-1. Run the executable or Python script
-2. Browse to select folder containing HEIC files
-3. Choose whether to delete original files
-4. Click Convert to start the process
+1. Download and run "HEIC Converter v2.exe"
+2. Click "Browse" to select folder containing HEIC files
+3. Check "Delete original HEIC files" if desired
+4. Click "Convert" to start the conversion process
+5. Monitor progress in the log window
 
 ## Building from Source
+Requirements:
+- Python 3.11 or later
+- Required packages: `pip install Pillow pillow-heif pywin32`
+
 To create executable:
 ```bash
 pyinstaller --onefile --noconsole --name "HEIC Converter v2" --clean --uac-admin heic_png_guiv2.py
